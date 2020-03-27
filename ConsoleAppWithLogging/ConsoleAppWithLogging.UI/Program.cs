@@ -6,7 +6,6 @@ namespace ConsoleAppWithLogging.UI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
