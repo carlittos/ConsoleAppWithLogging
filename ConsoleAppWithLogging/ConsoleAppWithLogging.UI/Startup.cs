@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
+using ConsoleAppWithLogging.UI.Services;
 
 namespace ConsoleAppWithLogging.UI
 {
@@ -34,6 +35,7 @@ namespace ConsoleAppWithLogging.UI
             });
 
             //Injecting services
+            services.AddSingleton<EntryPointService>();
 
             return services;
 
